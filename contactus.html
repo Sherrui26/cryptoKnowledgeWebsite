@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="aboutme.html" class="active">About Me</a>
+    <a href="Moreinfo.html">Learn More</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="homepage.html" class="left">Home</a>
+    <a href="quiz.html" style="background-color: #b8b5b5;" class="left">Quick Survey</a>
+
+    <img class="logo" src="items/icon.png" width="40px" height="40px" alt="" ;>
+  </div>
+
+  <h2><br>&ensp; <u>Contact Us For More Informations & Updates</u></h2>
+
+
+  <div class="container">
+    <div style="text-align:center">
+      <h2>Got Questions?</h2>
+      <p>Feel free to leave us some messages or questions:</p>
+
+    </div>
+    <div class="row">
+      <div class="column">
+        <form action="#">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Where are you from?</label>
+
+          <select id="country" name="country">
+            <option value="0" selected disabled>States</option>
+            <option value="Selangor">Selangor</option>
+            <option value="Kedah">Kedah</option>
+            <option value="Perlis">Perlis</option>
+            <option value="Pulau Pinang">Pulau Pinang</option>
+            <option value="Perak">Perak</option>
+            <option value="Negeri Sembilan">Negeri Sembilan</option>
+            <option value="Melaka">Melaka</option>
+            <option value="Johor">Johor</option>
+            <option value="Pahang">Pahang</option>
+            <option value="Kelantan">Kelantan</option>
+            <option value="Terengganu">Terengganu</option>
+            <option value="Sabah">Sabah</option>
+            <option value="Sarawak">Sarawak</option>
+            <option value="Wilayah Persekutuan">Wilayah Persekutuan</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+
+          <input onclick="mytext()" type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="column">
+
+        <img src="img/fraud.png" style="width:100%">
+        <p>&ensp; &ensp; Please be aware that scam activities nowadays is getting worse, if you got transactions to do
+          especially with cryptocurrencies, please make sure that everything is secure and do not do any transactions to
+          unknown
+          contact. If you got suspicous email, messages or any unknown person that maybe a scammer, feel free to do a
+          report <a href="https://reportfraud.ftc.gov/"> here.</a>
+        </p>
+
+      </div>
+    </div>
+
+    <center>
+      <p>And Help Us Answer This Quick Survery, Thank You!</p>
+      <a href="quiz.html">TAKE SURVEY</a>
+    </center>
+
+  </div>
+
+
+  <footer id="site-footer">
+
+    <div id="footer1">
+      <p>Copyright 2021 CryptoCurrency Website - All Rights Reserved </p>
+    </div>
+    <div id="footer2">
+      <p> CSC264 </p>
+    </div>
+
+  </footer>
+
+</body>
+
+<script>
+  function mytext() {
+    alert("Succeed!");
+  }
+</script>
+
+</html>

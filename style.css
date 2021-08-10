@@ -1,0 +1,265 @@
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #aaf9ff;
+  }
+  
+  .header {
+    padding: 80px;
+    text-align: center;
+    background-image: url(items/bg2.png);
+    color: white;
+  }
+
+  .selection {
+    overflow: hidden;
+    background-color: rgb(54, 81, 114);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(54, 81, 114);
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar a {
+    float: right;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px 18px;
+    text-decoration: none;
+  }
+
+  .navbar a.left {
+    background-color: rgb(68, 182, 248);
+    float: left;
+  }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .navbar a.active {
+    background-color: hsl(0, 0%, 52%);
+    color: rgb(0, 0, 0);
+  }
+
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .side {
+    position: static;
+    -ms-flex: 20%;
+    flex: 20%;
+    background-color: hsl(192, 61%, 61%);
+    padding: 20px;
+  }
+
+  .main {
+    -ms-flex: 80%;
+    flex: 80%;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  .logo {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin: auto;
+    color: #fff;
+  }
+  
+  .button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #184ad4;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    background-color: #202c4e
+  }
+
+  .button:active {
+    background-color: #387ece;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .about-section {
+    background: url(img/pic.png) no-repeat left;
+    background-size: 55%;
+    background-color: #aaf9ff;
+    overflow: hidden;
+    padding: 100px 0;
+  }
+
+  .inner-container {
+    width: 55%;
+    float: right;
+    background-color: #77bec0;
+    padding: 150px;
+  }
+
+  .inner-container h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  .text {
+    font-size: 15px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #0468aa;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #3ca6c0;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #91d4d6;
+    padding: 10px;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .zoom {
+    transition: transform .2s;
+  }
+
+  .zoom:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(55, 36, 100);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+
+  #site-footer {
+    height: 80px;
+    background: hsl(192, 51%, 48%);
+  }
+
+  #footer1 {
+    margin-left: 2%;
+    float: left;
+
+  }
+
+  #footer2 {
+    margin-right: 2%;
+    float: right;
+  }
+
+  @media screen and (max-width:1200px) {
+    .inner-container {
+      padding: 80px;
+    }
+  }
+
+  @media screen and (max-width:1000px) {
+    .about-section {
+      background-size: 100%;
+      padding: 100px 40px;
+    }
+
+    .inner-container {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width:600px) {
+    .about-section {
+      padding: 0;
+    }
+
+    .inner-container {
+      padding: 60px;
+    }
+  }

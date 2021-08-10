@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  tr {
+    padding: 2%;
+    border: 3px solid;
+  }
+
+  td {
+    padding: 2%;
+    border: 3px solid;
+    border-color: rgb(0, 75, 141);
+  }
+
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+</style>
+
+<body>
+
+  <div class="navbar">
+    <a href="aboutme.html" class="active">About Me</a>
+    <a href="Moreinfo.html">Learn More</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="homepage.html" class="left">Home</a>
+
+    <img class="logo" src="items/icon.png" width="40px" height="40px" alt="" ;>
+  </div>
+
+
+  <h2><br>&ensp; <u>Short Survey and Questions</u></h2>
+
+  <br><br>
+  <center>
+    <table
+      style="table-layout: fixed; width: 80%; background-color: #61c7f0; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+      <tr>
+        <td style="word-wrap: break-word">
+          <br>
+
+          <form action="#" method="">
+
+            <label for="first-name">Name/Nickname: </label>
+            <input type="text" name="first-name" placeholder="Sherrui" required>
+            <div>
+              <br>
+              <label for="gender">I am : </label><br>
+              <label for="gender-male">Male</label>
+              <input type="radio" name="gender-choice" value="choice-1">
+
+              <label for="gender-female">Female</label>
+              <input type="radio" name="gender-choice" value="choice-2">
+            </div>
+
+            <div>
+              <br>
+              <label for="Month">Birthday</label>
+              <select name="Month">
+
+                <option value="0" selected disabled>Month</option>
+                <option value="jan">January</option>
+                <option value="feb">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="aug">August</option>
+                <option value="sep">September</option>
+                <option value="oct">October</option>
+                <option value="nov">November</option>
+                <option value="dec">December</option>
+
+              </select>
+
+            </div>
+
+            <p>Short Questions: </p>
+            <div>
+              <br>
+              <label for="q1">Bitcoin transactions receive anonymous protection. : </label><br>
+              <label for="true">True</label>
+              <input type="radio" name="choice" value="choice-1">
+
+              <label for="false">False</label>
+              <input type="radio" name="choice" value="choice-2">
+            </div>
+            <div>
+              <br><br>
+              <label for="q2">Bitcoin cannot be regulated by law. : </label><br>
+              <label for="true">True</label>
+              <input type="radio" name="choice1" value="choice-1">
+
+              <label for="false">False</label>
+              <input type="radio" name="choice1" value="choice-2">
+            </div>
+            <div>
+              <br><br>
+              <label for="q3">Mining crypto uses a ton of energy. : </label><br>
+              <label for="true">True</label>
+              <input type="radio" name="choice2" value="choice-1">
+
+              <label for="false">False</label>
+              <input type="radio" name="choice2" value="choice-2">
+            </div>
+            <div>
+              <br><br>
+              <label for="q4"> Some countries ban the cryptocurrency. : </label><br>
+              <label for="true">True</label>
+              <input type="radio" name="choice3" value="choice-1">
+
+              <label for="false">False</label>
+              <input type="radio" name="choice3" value="choice-2">
+            </div>
+            <div>
+              <br><br>
+              <label for="q5">The currency could get shut down. : </label><br>
+              <label for="true">True</label>
+              <input type="radio" name="choice4" value="choice-1">
+
+              <label for="false">False</label>
+              <input type="radio" name="choice4" value="choice-2">
+            </div>
+            </div>
+            
+            <br>
+            
+            <div>
+              <p>What's your favourite crypto?</p>
+              <input type="checkbox" name="BTC" value="yes">Bitcoin
+					    <input type="checkbox" name="ETH" value="yes">Ethereum
+					    <input type="checkbox" name="XRP" value="yes">Ripple
+					    <input type="checkbox" name="ADA" value="yes">Cardano
+              <input type="checkbox" name="BNB" value="yes">Binance
+					    <input type="checkbox" name="TRX" value="yes">Tron
+            </div>
+
+            <br><br>
+            <label for="subject">What do you think about cryptocurrency?</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+
+
+            <label for="agree">I agree to all the conditions of the form</label>
+            <input type="checkbox" name="agree">
+
+            <button onclick="mytext()" type="submit">Submit</button>
+          </form>
+
+
+
+
+        </td>
+      </tr>
+    </table>
+  </center>
+  <br><br>
+
+
+  <footer id="site-footer">
+
+    <div id="footer1">
+      <p>Copyright 2021 CryptoCurrency Website - All Rights Reserved </p>
+    </div>
+    <div id="footer2">
+      <p> CSC264 </p>
+    </div>
+
+  </footer>
+</body>
+
+<script>
+  function mytext() {
+    alert("Succeed!");
+  }
+</script>
+
+</html>
